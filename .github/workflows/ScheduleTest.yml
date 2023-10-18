@@ -5,10 +5,10 @@ on:
   - cron: '*/2 * * * *'
 
 jobs:
-  name: Test
-  runs-on: ubuntu-latest
+ name: Test
+ runs-on: ubuntu-latest
   steps:
-   - name: Scheduling test
-     shell: bash
-     run: |
-       echo "This is testing"
+  - name: Scheduling test
+    shell: bash
+    run: |
+      echo "This is testing"
