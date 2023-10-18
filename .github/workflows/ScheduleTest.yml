@@ -3,3 +3,11 @@ name: ScheduleTest
 on:
   schedule:
   - cron: '*/2 * * * *'
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Scheduling test
+    shell: bash
+    run: |
+     echo "This is testing"
