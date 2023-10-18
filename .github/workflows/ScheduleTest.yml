@@ -1,9 +1,6 @@
 name: ScheduleTest
 
 on:
-  push:
-   branches:
-     - main
   schedule:
     - cron: '*/2 * * * *'
 
