@@ -1,8 +1,11 @@
 name: ScheduleTest
 
 on:
+  push:
+   branches:
+     - main 
   schedule:
-  - cron: '*/2 * * * *'
+   - cron: '*/2 * * * *'
 
 jobs:
   Job1:
