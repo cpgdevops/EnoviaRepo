@@ -2,12 +2,12 @@ name: ScheduleTest
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+  - cron: '*/2 * * * *'
 
 jobs:
-  build-gradle-project:
-   runs-on: ubuntu-latest
-   steps:
+  name: Test
+  runs-on: ubuntu-latest
+  steps:
    - name: Scheduling test
      shell: bash
      run: |
