@@ -5,9 +5,10 @@ on:
   - cron: '*/2 * * * *'
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Scheduling test
-    shell: bash
-    run: |
-     echo "This is testing"
+  build-gradle-project:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Scheduling test
+     shell: bash
+     run: |
+      echo "This is testing"
