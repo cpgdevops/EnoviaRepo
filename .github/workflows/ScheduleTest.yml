@@ -3,7 +3,7 @@ name: ScheduleTest
 on:
   push:
    branches:
-     - DevPipelienes
+     - main
   schedule:
     - cron: '5 * * * *'
 
